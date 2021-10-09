@@ -1,0 +1,151 @@
+{
+    "wildsea": {
+        "header-labels": {
+            "background": "Background",
+            "edges": "Edges",
+            "skills": "Skills",
+            "skill-headers": {
+                "movement": "Movement",
+                "detection": "Detection",
+                "survival": "Survival",
+                "creation": "Creation",
+                "social": "Social",
+                "combat": "Combat"
+            },
+            "languages": "Languages",
+            "milestones": "Milestones",
+            "drives": "Drives",
+            "mires": "Mires",
+            "aspects": "Aspects"
+        },
+        "background-labels": {
+            "origin": "Origin",
+            "bloodline": "Bloodline",
+            "post": "Post"
+        },
+        "edges": {
+            "none": "",
+            "grace": "Grace",
+            "iron": "Iron",
+            "instinct": "Instinct",
+            "sharps": "Sharps",
+            "teeth": "Teeth",
+            "tides": "Tides",
+            "veils": "Veils"
+        },
+        "milestones-major": "Major",
+        "milestones-minor": "Minor",
+        "skills": {
+            "movement": {
+                "climb": "Climb",
+                "scramble": "Scramble",
+                "leap": "Leap",
+                "stealth": "Stealth",
+                "wavewalk": "Wavewalk"
+            },
+            "detection": {
+                "scrutinize": "Scrutinize",
+                "sense": "Sense",
+                "hunt": "Hunt",
+                "scry": "Scry"
+            },
+            "survival": {
+                "hack": "Hack",
+                "break": "Break",
+                "gather": "Gather",
+                "scavenge": "Scavenge",
+                "heal": "Heal",
+                "repair": "Repair"
+            },
+            "creation": {
+                "craft": "Craft",
+                "cook": "Cook",
+                "concoct": "Concoct",
+                "ritualize": "Ritualize"
+            },
+            "social": {
+                "charm": "Charm",
+                "negotiate": "Negotiate",
+                "outwit": "Outwit",
+                "perform": "Perform",
+                "trance": "Trance"
+            },
+            "combat": {
+                "strike": "Strike",
+                "shoot": "Shoot",
+                "hex": "Hex",
+                "block": "Block",
+                "dodge": "Dodge"
+            }
+        },
+        "skills.descriptions": {
+            "movement": {
+                "climb": "",
+                "scramble": "",
+                "leap": "",
+                "stealth": "",
+                "wavewalk": ""
+            },
+            "detection": {
+                "scrutinize": "",
+                "sense": "",
+                "hunt": "",
+                "scry": ""
+            },
+            "survival": {
+                "hack": "",
+                "break": "",
+                "gather": "",
+                "scavenge": "",
+                "heal": "",
+                "repair": ""
+            },
+            "creation": {
+                "craft": "",
+                "cook": "",
+                "concoct": "",
+                "ritualize": ""
+            },
+            "social": {
+                "charm": "",
+                "negotiate": "",
+                "outwit": "",
+                "perform": "",
+                "trance": ""
+            },
+            "combat": {
+                "strike": "",
+                "shoot": "",
+                "hex": "",
+                "block": "",
+                "dodge": ""
+            }
+        },
+        "languages": {
+            "low-sour": "Low Sour",
+            "chthonic": "Chthonic",
+            "saprekk": "Saprekk",
+            "gaudimm": "Gaudimm",
+            "knock": "Knock",
+            "brasstongue": "Brasstongue",
+            "raka-spit": "Raka Spit",
+            "lyre-bite": "Lyre-Bite",
+            "old-hand": "Old Hand",
+            "signalling": "Signalling",
+            "highvin": "Highvin"
+        },
+        "languages.descriptions": {
+            "low-sour": "A mongrel language that has developed in the years since the shattered post-verdancy cultures started making contact with each other. Low Sour is the closest thing to a ‘common tongue’ on the waves, and doesn't come with any particular lore or cultural knowledge besides what every wildsailor would know about the world they live in.",
+            "chthonic": "An ancient human language, now split into thousands of unique dialects spoken by different groups of ardent survivors. Lore might include the details of ancient human rituals and spirit-knowledge.",
+            "saprekk": "The thick, rolling tongue of the ektus, almost entirely unchanged despite hundreds of years. For non-ektus to have learned even a smattering of saprekk is often seen as a great mark of respect. Lore might include tales of deserts, heat and winds.",
+            "gaudium": "A chemical language of subtle twitches and soft clicks used by the gau. Though the structure and grammar are surprisingly easy to learn, pheromonal bursts are required to communicate the most complex concepts. Lore might include detailed knowledge of caves, tunnels and the progression of rot.",
+            "knock": "The hissing, chittering voice of the tzelicrae hive-minds. Many of the sounds are impossible for a single mouth to form, so most outsiders that learn knock speak a simplified form relying partly on gesture. Lore might include a deeper understanding of insects and arachnid minds and habits.",
+            "brasstongue": "A clipped and precise language used by experienced traders, adapted from the punch-cards of ancient ordinators. Knowledge of brasstongue is likely to garner respect among merchants and grifters. Lore might include cargo routes and tales of great sales or negotiation tactics.",
+            "raka-spit": "The rapid patter of hunting-families and leviathaneers, known for its incredible depth of descriptive words. Lore might include facts about the beasts and birds of the waves , and great conquests of the wilds.",
+            "lyre-bite": "The lilting tongue of poets and songwriters across the wild waves, well-suited to performances and long-form poetry. Lore might include ancient pre-verdant songs and a deeper understanding of whispers.",
+            "old-hand": "An entirely gesture-based language with no spoken component, perfect for those naturally quiet types. Old Hand has existed since before the verdancy, and has changed remarkably little despite the passage of years. Lore might include expansive desciptions of long-lost relics.",
+            "signalling": "An unspoken code broadcast with flags, flares or signallamps, often known by experienced travellers, military types and smugglers. Relies partly on colour. Lore might include information on various ships, weather types and seagoing hazards.",
+            "highvin": "Exceedingly difficult to master, Highvin is a primarily written language often found on old pre-verdant ruins. Usually understood by scholars, antiquarians and treasure-hunters. Lore might include details of the preverdant times, though always fragmentary."
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.wildsea.sheet.wildsailor form {
+  display: flex;
+  flex-direction: column;
+}
+.wildsea.sheet.wildsailor .section-header-label {
+  color: white;
+  background-color: black;
+  padding-left: 10px;
+  margin-top: 10px;
+}

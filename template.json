@@ -1,0 +1,293 @@
+{
+    "Actor": {
+        "types": ["wildsailor", "npc"],
+        "wildsailor": {
+            "background": {
+                "bloodline": "",
+                "origin": "",
+                "post": ""
+            },
+            "edges": {
+                "grace": {
+                    "trained": false
+                },
+                "iron": {
+                    "trained": false
+                },
+                "instinct": {
+                    "trained": false
+                },
+                "sharps": {
+                    "trained": false
+                },
+                "teeth": {
+                    "trained": false
+                },
+                "tides": {
+                    "trained": false
+                },
+                "veils": {
+                    "trained": false
+                }
+            },
+            "milestones": {
+                "minor-milestone-1": "",
+                "minor-milestone-2": "",
+                "minor-milestone-3": "",
+                "major-milestone-1": "",
+                "major-milestone-2": "",
+                "major-milestone-3": ""
+            },
+            "drives": {
+                "drive-1": "",
+                "drive-2": "",
+                "drive-3": ""
+            },
+            "mires": {
+                "mire-1": "",
+                "mire-2": "",
+                "mire-3": ""
+            },
+            "skills": {
+                "movement": {
+                    "climb": {
+                        "description": "wildsea.skills-descriptions.movement.climb",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "scramble": {
+                        "description": "wildsea.skills-descriptions.movement.scramble",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "leap": {
+                        "description": "wildsea.skills-descriptions.movement.leap",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "stealth": {
+                        "description": "wildsea.skills-descriptions.movement.stealth",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "wavewalk": {
+                        "description": "wildsea.skills-descriptions.movement.wavewalk",
+                        "value": 0,
+                        "max": 3
+                    }
+                },
+                "detection": {
+                    "scrutinize": {
+                        "description": "wildsea.skills-descriptions.detection.scrutinize",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "sense": {
+                        "description": "wildsea.skills-descriptions.detection.sense",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "hunt": {
+                        "description": "wildsea.skills-descriptions.detection.hunt",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "scry": {
+                        "description": "wildsea.skills-descriptions.detection.scry",
+                        "value": 0,
+                        "max": 3
+                    }
+                },
+                "survival": {
+                    "hack": {
+                        "description": "wildsea.skills-descriptions.survival.hack",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "break": {
+                        "description": "wildsea.skills-descriptions.survival.break",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "gather": {
+                        "description": "wildsea.skills-descriptions.survival.gather",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "scavenge": {
+                        "description": "wildsea.skills-descriptions.survival.scavenge",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "heal": {
+                        "description": "wildsea.skills-descriptions.survival.heal",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "repair": {
+                        "description": "wildsea.skills-descriptions.survival.repair",
+                        "value": 0,
+                        "max": 3
+                    }
+                },
+                "creation": {
+                    "craft": {
+                        "description": "wildsea.skills-descriptions.creation.craft",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "cook": {
+                        "description": "wildsea.skills-descriptions.creation.cook",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "concoct": {
+                        "description": "wildsea.skills-descriptions.creation.concoct",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "ritualize": {
+                        "description": "wildsea.skills-descriptions.creation.ritualize",
+                        "value": 0,
+                        "max": 3
+                    }
+                },
+                "social": {
+                    "charm": {
+                        "description": "wildsea.skills-descriptions.social.charm",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "negotiate": {
+                        "description": "wildsea.skills-descriptions.social.negotiate",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "outwit": {
+                        "description": "wildsea.skills-descriptions.social.outwit",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "perform": {
+                        "description": "wildsea.skills-descriptions.social.perform",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "trance": {
+                        "description": "wildsea.skills-descriptions.social.trance",
+                        "value": 0,
+                        "max": 3
+                    }
+                },
+                "combat": {
+                    "strike": {
+                        "description": "wildsea.skills-descriptions.combat.strike",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "shoot": {
+                        "description": "wildsea.skills-descriptions.combat.shoot",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "hex": {
+                        "description": "wildsea.skills-descriptions.combat.hex",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "block": {
+                        "description": "wildsea.skills-descriptions.combat.block",
+                        "value": 0,
+                        "max": 3
+                    },
+                    "dodge": {
+                        "description": "wildsea.skills-descriptions.combat.dodge",
+                        "value": 0,
+                        "max": 3
+                    }
+                }
+            },
+            "languages": {
+                "low-sour": {
+                    "description": "wildsea.languages.descriptions.low-sour", 
+                    "value": 0,
+                    "max": 3
+                },
+                "chthonic": {
+                    "description": "wildsea.languages.descriptions.chthonic",
+                    "value": 0,
+                    "max": 3
+                },
+                "saprekk": {
+                    "description": "wildsea.languages.descriptions.saprekk",
+                    "value": 0,
+                    "max": 3
+                },
+                "gaudium": {
+                    "description": "wildsea.languages.descriptions.gaudium",
+                    "value": 0,
+                    "max": 3
+                },
+                "knock": {
+                    "description": "wildsea.languages.descriptions.knock",
+                    "value": 0,
+                    "max": 3
+                },
+                "brasstongue": {
+                    "description": "wildsea.languages.descriptions.brasstongue",
+                    "value": 0,
+                    "max": 3
+                },
+                "raka-spit": {
+                    "description": "wildsea.languages.descriptions.raka-spit",
+                    "value": 0,
+                    "max": 3
+                },
+                "lyre-bite": {
+                    "description": "wildsea.languages.descriptions.lyre-bite",
+                    "value": 0,
+                    "max": 3
+                },
+                "old-hand": {
+                    "description": "wildsea.languages.descriptions.old-hand",
+                    "value": 0,
+                    "max": 3
+                },
+                "signalling": {
+                    "description": "wildsea.languages.descriptions.signalling",
+                    "value": 0,
+                    "max": 3
+                },
+                "highvin": {
+                    "description": "wildsea.languages.descriptions.highvin",
+                    "value": 0,
+                    "max": 3
+                }
+            },
+            "aspects": {
+                
+            }
+        }
+    },
+    "Item": {
+        "types": [
+            "aspect", "bloodline", "origin", "post"
+        ],
+        "templates": {
+            "itemDescription": {
+                "description": ""
+            }
+        },
+        "aspect": {
+            "templates": [
+                "itemDescription"
+            ],
+            "trackLength": 0
+        },
+        "bloodline": {
+            "templates": [
+                "itemDescription"
+            ]
+        }
+    }
+}
