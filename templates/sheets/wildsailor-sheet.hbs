@@ -4,114 +4,167 @@
         <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="{{ localize 'Name' }}"/></h1>
     </header>
 
-    {{!-- BACKGROUND --}}
-    <div name="background" class="background">
-        <h1 class="section-header-label">{{localize "wildsea.header-labels.background"}}</h1>
-        <label>{{localize "wildsea.background-labels.origin"}}:<input name="data.background.origin" type="text" value="{{data.background.origin}}" data-dtype="String"/></label>
-        <label>{{localize "wildsea.background-labels.bloodline"}}:<input name="data.background.bloodline" type="text" value="{{data.background.bloodline}}" data-dtype="String"/></label>
-        <label>{{localize "wildsea.background-labels.post"}}:<input name="data.background.post" type="text" value="{{data.background.post}}" data-dtype="String"/></label>
-        <label>Notes:<textarea>Notes notes notes</textarea></label>
-    </div>
+    <div class="section-container">
+    {{!-- COLUMN 1 --}}
+    <section class="column-1">
+        {{!-- BACKGROUND --}}
+        <section name="background" class="background">
+            <h1 class="section-header-label">{{localize "wildsea.header-labels.background"}}</h1>
+            <label for="origin" class="inline-background">{{localize "wildsea.background-labels.origin"}}:</label><input name="data.background.origin" type="text" value="{{data.background.origin}}" id="origin" data-dtype="String"/>
+            <label for="bloodline" class="inline-background">{{localize "wildsea.background-labels.bloodline"}}:</label><input name="data.background.bloodline" type="text" value="{{data.background.bloodline}}" id="bloodline" data-dtype="String"/>
+            <label for="post" class="inline-background">{{localize "wildsea.background-labels.post"}}:</label><input name="data.background.post" type="text" value="{{data.background.post}}" id="post" data-dtype="String"/></label>
+            {{!-- <label>Notes:<textarea>Notes notes notes</textarea></label> --}}
+        </section>
 
-    {{!-- MILESTONES --}}
-    <div name="milestones" class="milestones">
-        <h1 class="section-header-label">{{localize "wildsea.header-labels.milestones"}}</h1>
-        <h2 class="subsection-header-label">{{localize "wildsea.milestones-major"}}</h2>
-        <input name="data.milestones.major-milestone-1" type="text" value="{{data.milestones.major-milestone-1}}"/>
-        <h2 class="subsection-header-label">{{localize "wildsea.milestones-minor"}}</h2>
-        <input name="data.milestones.minor-milestone-1" type="text" value="{{data.milestones.minor-milestone-1}}"/>
-    </div>
+        {{!-- MILESTONES --}}
+        <section name="milestones" class="milestones">
+            <h1 class="section-header-label">{{localize "wildsea.header-labels.milestones"}}</h1>
+            <section name="milestones-subsection" class="milestones-subsection">
+                <div class="milestones-section">
+                    <h2 class="subsection-header">{{localize "wildsea.milestones-major"}}</h2>
+                    <input name="data.milestones.major-milestone-1" type="text" value="{{data.milestones.major-milestone-1}}"/>
+                </div>
+                <div class="milestones-section">
+                    <h2 class="subsection-header">{{localize "wildsea.milestones-minor"}}</h2>
+                    <input name="data.milestones.minor-milestone-1" type="text" value="{{data.milestones.minor-milestone-1}}"/>
+                </div>
+            </section>
+        </section>
 
-    {{!-- DRIVES --}}
-    <div name="drives" class="drives">
-        <h1 class="section-header-label">{{localize "wildsea.header-labels.drives"}}</h1>
-        <input name="data.drives.drive-1" type="text" value="{{data.drives.drive-1}}"/>
-    </div>
+        {{!-- DRIVES --}}
+        <section name="drives" class="drives">
+            <h1 class="section-header-label">{{localize "wildsea.header-labels.drives"}}</h1>
+            <input name="data.drives.drive-1" type="text" value="{{data.drives.drive-1}}"/>
+            <input name="data.drives.drive-2" type="text" value="{{data.drives.drive-2}}"/>
+            <input name="data.drives.drive-3" type="text" value="{{data.drives.drive-3}}"/>
+        </section>
 
-    {{!-- MIRES --}}
-    <div name="mires" class="mires">
-        <h1 class="section-header-label">{{localize "wildsea.header-labels.mires"}}</h1>
-        <input name="data.mires.mire-1" type="text" value="{{data.mires.mire-1}}"/>
-    </div>
+        {{!-- MIRES --}}
+        <section name="mires" class="mires">
+            <h1 class="section-header-label">{{localize "wildsea.header-labels.mires"}}</h1>
+            <div class="mire-1">
+                <input name="data.mires.mire-1" type="text" value="{{data.mires.mire-1}}"/>
+                <input name="data.mires.mire-1-track-1" type="checkbox" value="{{data.mires.mire-1-track-1}}"/>
+                <input name="data.mires.mire-1-track-2" type="checkbox" value="{{data.mires.mire-1-track-2}}"/>
+            </div>
+            <div class="mire-2">
+                <input name="data.mires.mire-2" type="text" value="{{data.mires.mire-2}}"/>
+                <input name="data.mires.mire-2-track-1" type="checkbox" value="{{data.mires.mire-2-track-1}}"/>
+                <input name="data.mires.mire-2-track-2" type="checkbox" value="{{data.mires.mire-2-track-2}}"/>
+            </div>
+            <div class="mire-3">
+                <input name="data.mires.mire-3" type="text" value="{{data.mires.mire-3}}"/>
+                <input name="data.mires.mire-3-track-1" type="checkbox" value="{{data.mires.mire-3-track-1}}"/>
+                <input name="data.mires.mire-3-track-2" type="checkbox" value="{{data.mires.mire-3-track-2}}"/>
+            </div>
+        </section>
+    </section>
 
-    {{!-- EDGES --}}
-    <div name="edges" class="edges">
-        <h1 class="section-header-label">{{localize "wildsea.header-labels.edges"}}</h1>
-        {{#each config.edges as |label e|}}
-        {{#with (lookup ../data.edges e) as |edge|}}
-        <label>{{localize label}}<input name="data.edges.{{e}}.trained" type="checkbox" {{checked edge.trained}} data-dtype="Boolean"/></label>
-        {{/with}}
-        {{/each}}
-    </div>
+    {{!-- COLUMN 2 --}}
+    <section class="column-2">
+        {{!-- EDGES --}}
+        <section name="edges" class="edges">
+            <h1 class="section-header-label">{{localize "wildsea.header-labels.edges"}}</h1>
+            <section class="edges-subsection">
+                {{#each config.edges as |label e|}}
+                {{#with (lookup ../data.edges e) as |edge|}}
+                <label for="{{e}}" class="edge-label">{{localize label}}<input name="data.edges.{{e}}.trained" type="checkbox" {{checked edge.trained}} id="{{e}}" data-dtype="Boolean"/></label>
+                {{/with}}
+                {{/each}}
+            </section>
+        </section>
 
-    {{!-- SKILLS --}}
-    <div name="skills" class="skills">
-        <h1 class="section-header-label">{{localize "wildsea.header-labels.skills"}}</h1>
-        <div name="skills-grid">
-            <div name="movement-skills">
-                <h2 class="subsection-header-label">{{localize "wildsea.header-labels.skill-headers.movement"}}</h2>
-                {{#each config.skills.movement as |label s|}}
-                {{#with (lookup ../data.skills.movement s) as |skill|}}
-                <label>{{localize label}}<input name="data.skills.movement.{{s}}.value" type="number" value={{skill.value}} data-dtype="Number"/></label>
+        {{!-- SKILLS --}}
+        <section name="skills" class="skills">
+            <h1 class="section-header-label">{{localize "wildsea.header-labels.skills"}}</h1>
+            <div name="skills-grid" class="skills-grid">
+                <div class="skills-grid-row-1">
+                <div name="movement-skills" class="movement-skills">
+                    <h2 class="subsection-header">{{localize "wildsea.header-labels.skill-headers.movement"}}</h2>
+                    {{#each config.skills.movement as |label s|}}
+                    {{#with (lookup ../data.skills.movement s) as |skill|}}
+                    <label for="{{s}}" class="inline-label">{{localize label}}</label><input name="data.skills.movement.{{s}}.value" id="{{s}}" type="number" value={{skill.value}} data-dtype="Number"/>
+                    {{/with}}
+                    {{/each}}
+                </div>
+                <div name="detection-skills" class="detection-skills">
+                    <h2 class="subsection-header">{{localize "wildsea.header-labels.skill-headers.detection"}}</h2>
+                    {{#each config.skills.detection as |label s|}}
+                    {{#with (lookup ../data.skills.detection s) as |skill|}}
+                    <label for="{{s}}" class="inline-label">{{localize label}}</label><input name="data.skills.detection.{{s}}.value" id="{{s}}" type="number" value={{skill.value}} data-dtype="Number"/>
+                    {{/with}}
+                    {{/each}}
+                </div>
+                <div name="survival-skills" class="survival-skills">
+                    <h2 class="subsection-header">{{localize "wildsea.header-labels.skill-headers.survival"}}</h2>
+                    {{#each config.skills.survival as |label s|}}
+                    {{#with (lookup ../data.skills.survival s) as |skill|}}
+                    <label for="{{s}}" class="inline-label">{{localize label}}</label><input name="data.skills.survival.{{s}}.value" id="{{s}}" type="number" value={{skill.value}} data-dtype="Number"/>
+                    {{/with}}
+                    {{/each}}
+                </div>
+                </div>
+                <div class="skills-grid-row-2">
+                <div name="creation-skills" class="creation-skills">
+                    <h2 class="subsection-header">{{localize "wildsea.header-labels.skill-headers.creation"}}</h2>
+                    {{#each config.skills.creation as |label s|}}
+                    {{#with (lookup ../data.skills.creation s) as |skill|}}
+                    <label for="{{s}}" class="inline-label">{{localize label}}</label><input name="data.skills.creation.{{s}}.value" id="{{s}}" type="number" value={{skill.value}} data-dtype="Number"/>
+                    {{/with}}
+                    {{/each}}
+                </div>
+                <div name="social-skills" class="social-skills">
+                    <h2 class="subsection-header">{{localize "wildsea.header-labels.skill-headers.social"}}</h2>
+                    {{#each config.skills.social as |label s|}}
+                    {{#with (lookup ../data.skills.social s) as |skill|}}
+                    <label for="{{s}}" class="inline-label">{{localize label}}</label><input name="data.skills.social.{{s}}.value" id="{{s}}" type="number" value={{skill.value}} data-dtype="Number"/>
+                    {{/with}}
+                    {{/each}}
+                </div>
+                <div name="combat-skills" class="combat-skills">
+                    <h2 class="subsection-header">{{localize "wildsea.header-labels.skill-headers.combat"}}</h2>
+                    {{#each config.skills.combat as |label s|}}
+                    {{#with (lookup ../data.skills.combat s) as |skill|}}
+                    <label for="{{s}}" class="inline-label">{{localize label}}</label><input name="data.skills.combat.{{s}}.value" id="{{s}}" type="number" value={{skill.value}} data-dtype="Number"/>
+                    {{/with}}
+                    {{/each}}
+                </div>
+                </div>
+            </div>
+        </section>
+
+        {{!-- LANGUAGES --}}
+        <section name="languages" class="languages">
+            <h1 class="section-header-label">{{localize "wildsea.header-labels.languages"}}</h1>
+            <div class="language-container">
+                {{#each config.languages as |label l|}}
+                {{#with (lookup ../data.languages l) as |language|}}
+                <label for="{{l}}">{{localize label}}</label><input name="data.languages.{{l}}.value" id="{{l}}" type="number" value={{language.value}} title="{{localize language.description}}" data-dtype="Number"/>
                 {{/with}}
                 {{/each}}
             </div>
-            <div name="detection-skills">
-                <h2 class="subsection-header-label">{{localize "wildsea.header-labels.skill-headers.detection"}}</h2>
-                {{#each config.skills.detection as |label s|}}
-                {{#with (lookup ../data.skills.detection s) as |skill|}}
-                <label>{{localize label}}<input name="data.skills.detection.{{s}}.value" type="number" value={{skill.value}} data-dtype="Number"/></label>
-                {{/with}}
-                {{/each}}
-            </div>
-            <div name="survival-skills">
-                <h2 class="subsection-header-label">{{localize "wildsea.header-labels.skill-headers.survival"}}</h2>
-                {{#each config.skills.survival as |label s|}}
-                {{#with (lookup ../data.skills.survival s) as |skill|}}
-                <label>{{localize label}}<input name="data.skills.survival.{{s}}.value" type="number" value={{skill.value}} data-dtype="Number"/></label>
-                {{/with}}
-                {{/each}}
-            </div>
-            <div name="creation-skills">
-                <h2 class="subsection-header-label">{{localize "wildsea.header-labels.skill-headers.creation"}}</h2>
-                {{#each config.skills.creation as |label s|}}
-                {{#with (lookup ../data.skills.creation s) as |skill|}}
-                <label>{{localize label}}<input name="data.skills.creation.{{s}}.value" type="number" value={{skill.value}} data-dtype="Number"/></label>
-                {{/with}}
-                {{/each}}
-            </div>
-            <div name="social-skills">
-                <h2 class="subsection-header-label">{{localize "wildsea.header-labels.skill-headers.social"}}</h2>
-                {{#each config.skills.social as |label s|}}
-                {{#with (lookup ../data.skills.social s) as |skill|}}
-                <label>{{localize label}}<input name="data.skills.social.{{s}}.value" type="number" value={{skill.value}} data-dtype="Number"/></label>
-                {{/with}}
-                {{/each}}
-            </div>
-            <div name="combat-skills">
-                <h2 class="subsection-header-label">{{localize "wildsea.header-labels.skill-headers.combat"}}</h2>
-                {{#each config.skills.combat as |label s|}}
-                {{#with (lookup ../data.skills.combat s) as |skill|}}
-                <label>{{localize label}}<input name="data.skills.combat.{{s}}.value" type="number" value={{skill.value}} data-dtype="Number"/></label>
-                {{/with}}
-                {{/each}}
-            </div>
-        </div>
-    </div>
+        </section>
+    </section>
 
-    {{!-- LANGUAGES --}}
-    <div name="languages" class="languages">
-        <h1 class="section-header-label">{{localize "wildsea.header-labels.languages"}}</h1>
-        {{#each config.languages as |label l|}}
-        {{#with (lookup ../data.languages l) as |language|}}
-        <label>{{localize label}}<input name="data.languages.{{l}}.value" type="number" value={{language.value}} title="{{localize language.description}}" data-dtype="Number"/></label>
-        {{/with}}
-        {{/each}}
-    </div>
-
-    {{!-- ASPECTS --}}
-    <div name="aspects" class="aspects">
-        <h1 class="section-header-label">{{localize "wildsea.header-labels.aspects"}}</h1>
+    {{!-- COLUMN 3 --}}
+    <section class="column-3">
+        {{!-- ASPECTS --}}
+        <section name="aspects" class="aspects">
+            <h1 class="section-header-label">{{localize "wildsea.header-labels.aspects"}}
+                <a class="item-create" data-type="aspect" title="{{localize wildsea.sheet-buttons.add-aspect}}">
+                    <i class="fas fa-plus"></i>
+                </a>
+            </h1>
+            <div class="aspect-container">
+                {{#each aspects as |aspect id|}}
+                <div class="aspect-item item" data-item-id="{{aspect._id}}">
+                    <input class="aspect-name inline-edit" data-field="name" type="text" value="{{aspect.name}}" placeholder="{{localize "wildsea.sheet-buttons.new-aspect"}}"/>
+                    <input class="aspect-trackLength inline-edit" data-field="data.value" type="text" value="{{aspect.data.value}}" placeholder="3" data-dtype="Number"/>
+                    <input type="checkbox"/>
+                </div>
+                {{/each}}
+            </div>
+        </section>
+    </section>
     </div>
 </form>
-

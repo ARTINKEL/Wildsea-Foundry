@@ -1,5 +1,11 @@
 export const wildsea = {};
 
+wildsea.trackLevels = {
+    "clear": "wildsea.track-levels.clear",
+    "mark": "wildsea.track-levels.mark",
+    "burn": "wildsea.track-levels.burn"
+}
+
 wildsea.edges = {
     "grace": "wildsea.edges.grace",
     "iron": "wildsea.edges.iron",

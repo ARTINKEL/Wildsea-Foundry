@@ -2,11 +2,165 @@
     form {
         display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
     }
     .section-header-label {
         color: white;
         background-color: black;
         padding-left: 10px;
         margin-top: 10px;
+    }
+    .subsection-header {
+        color: white;
+        background-color: grey;
+        padding-left: 10px;
+        margin-top: 10px;
+        margin-right: 5px;
+        min-width: 145px;
+    }
+
+    .section-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+        .column-1 {
+            flex: 1;
+            max-width: 350px;
+            order: 1;
+        }
+        .column-2 {
+            flex: 1;
+            min-width: 450px;
+            max-width: 800px;
+            order: 2;
+        }
+        .column-3 {
+            flex: 1;
+            order: 3;
+            max-width: 300px;
+        }
+    }
+
+    .background {
+        .inline-background {
+            display: inline-block;
+            vertical-align: middle;
+            width: 25%;
+        }
+        input {
+            padding: 5px 5px;
+            margin-left: 2px;
+            margin-top: 5px;
+            width: 74%;
+        }
+    }
+    
+    .milestones {
+        .milestones-subsection {
+            display: flex;
+            flex-direction: row;
+            .milestones-section {
+                width: 300px;
+            }
+        }
+    }
+
+    .drives {
+        input {
+            margin-bottom: 5px;
+        }
+    }
+
+    .mires {
+        .mire-1, .mire-2, .mire-3 {
+            input[type=text] {
+                width: 75%;
+                margin-bottom: 5px;
+            }
+            input[type=checkbox] {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .edges {
+        .edges-subsection {
+            display: flex;
+            flex-direction: row;
+            input {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .skills {
+        .skills-grid {
+            display: flex;
+            flex-direction: column;
+            .skills-grid-row-1, .skills-grid-row-2 {
+                display: flex;
+                flex-direction: row;
+                .movement-skills, .detection-skills, .survival-skills,
+                .creation-skills, .social-skills, .combat-skills {
+                    .inline-label {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 50%;
+                    }
+                    input {
+                        width: 25px;
+                        text-align: center;
+                        margin-top: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+    .languages {
+        .language-container {
+            column-count: 3;
+            column-gap: 5px;
+        }
+        label {
+            display: inline-block;
+            vertical-align: middle;
+            width: 80px;
+        }
+        input {
+            text-align: center;
+            width: 25px;
+            margin-top: 3px;
+        }
+    }
+
+    .aspects {
+        h1 {
+            display: flex;
+            flex-direction: row;
+            .item-create {
+                margin-left: auto;
+                margin-right: 5px;
+                margin-top: 3px;
+                vertical-align: middle;
+            }
+        }
+        .aspect-container {
+            display: flex;
+            flex-direction: column;
+            .aspect-item {
+                .aspect-name {
+                    width: 50%;
+                }
+                .aspect-trackLength {
+                    width: 10%;
+                    text-align: center;
+                }
+                input[type="checkbox"] {
+                    vertical-align: middle;
+                }
+            }
+        }
     }
 }

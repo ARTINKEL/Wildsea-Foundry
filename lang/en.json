@@ -146,6 +146,16 @@
             "old-hand": "An entirely gesture-based language with no spoken component, perfect for those naturally quiet types. Old Hand has existed since before the verdancy, and has changed remarkably little despite the passage of years. Lore might include expansive desciptions of long-lost relics.",
             "signalling": "An unspoken code broadcast with flags, flares or signallamps, often known by experienced travellers, military types and smugglers. Relies partly on colour. Lore might include information on various ships, weather types and seagoing hazards.",
             "highvin": "Exceedingly difficult to master, Highvin is a primarily written language often found on old pre-verdant ruins. Usually understood by scholars, antiquarians and treasure-hunters. Lore might include details of the preverdant times, though always fragmentary."
+        },
+        "track-levels": {
+            "clear": "Clear",
+            "mark": "Mark",
+            "burn": "Burn"
+        },
+        "sheet-buttons": {
+            "add-aspect": "Add Aspect",
+            "new-item": "New Item",
+            "new-aspect": "New Aspect"
         }
     }
 }

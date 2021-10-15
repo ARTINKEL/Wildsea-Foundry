@@ -46,7 +46,13 @@
             "mires": {
                 "mire-1": "",
                 "mire-2": "",
-                "mire-3": ""
+                "mire-3": "",
+                "mire-1-track-1": "",
+                "mire-1-track-2": "",
+                "mire-2-track-1": "",
+                "mire-2-track-2": "",
+                "mire-3-track-1": "",
+                "mire-3-track-2": ""
             },
             "skills": {
                 "movement": {
@@ -282,7 +288,11 @@
             "templates": [
                 "itemDescription"
             ],
-            "trackLength": 0
+            "name": "",
+            "trackLength": {
+                "value": 0,
+                "max": 7
+            }
         },
         "bloodline": {
             "templates": [
