@@ -159,8 +159,17 @@
                 {{#each aspects as |aspect id|}}
                 <div class="aspect-item item" data-item-id="{{aspect._id}}">
                     <input class="aspect-name inline-edit" data-field="name" type="text" value="{{aspect.name}}" placeholder="{{localize "wildsea.sheet-buttons.new-aspect"}}"/>
-                    <input class="aspect-trackLength inline-edit" data-field="data.value" type="text" value="{{aspect.data.value}}" placeholder="3" data-dtype="Number"/>
-                    <input type="checkbox"/>
+                    <a class="item-create" data-type="box" title="{{localize wildsea.sheet-buttons.add-box}}">
+                        <i class="fas fa-plus"></i>
+                    </a>
+                    <div class="aspect-track">
+                        {{#each boxes as |box id|}}
+                        <div class="box-item item" data-item-id="{{box._id}}">
+                            {{!--<img class="box-image" src="/wildsea/icons/sheet/track-clear.png"/>--}}
+                            <label>{{box.current-state}}</label>
+                        </div>
+                        {{/each}}
+                    </div>
                 </div>
                 {{/each}}
             </div>

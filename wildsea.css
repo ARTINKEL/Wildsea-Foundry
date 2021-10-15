@@ -157,3 +157,10 @@
 .wildsea.sheet.wildsailor .aspects .aspect-container .aspect-item input[type="checkbox"] {
   vertical-align: middle;
 }
+.wildsea.sheet.wildsailor .aspects .aspect-container .aspect-item .item-delete {
+  vertical-align: middle;
+}
+.wildsea.sheet.wildsailor .aspects .aspect-container .aspect-item .box-container {
+  display: flex;
+  flex-direction: row;
+}

@@ -155,7 +155,9 @@
         "sheet-buttons": {
             "add-aspect": "Add Aspect",
             "new-item": "New Item",
-            "new-aspect": "New Aspect"
+            "new-aspect": "New Aspect",
+            "delete": "Delete",
+            "add-box": "Add Box"
         }
     }
 }
