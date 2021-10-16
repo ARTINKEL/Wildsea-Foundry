@@ -11,7 +11,7 @@ export default class wildseaItemSheet extends ItemSheet {
             item: baseData.item,
             data: baseData.item.data.data,
             config: CONFIG.wildsea
-        }
+        };
         
         return sheetData;
     }

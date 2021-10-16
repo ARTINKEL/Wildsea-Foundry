@@ -150,23 +150,36 @@
             display: flex;
             flex-direction: column;
             .aspect-item {
+                display: flex;
+                flex-direction: row;
                 .aspect-name {
-                    width: 50%;
-                }
-                .aspect-trackLength {
-                    width: 10%;
-                    text-align: center;
-                }
-                input[type="checkbox"] {
-                    vertical-align: middle;
+                    width: 150px;
                 }
                 .item-delete {
                     vertical-align: middle;
                 }
-                .box-container {
-                    display: flex;
-                    flex-direction: row;
+                .aspect-trackLength {
+                    width: 8px;
+                    text-align: center;
                 }
+            }
+            .aspect-track {
+                display: flex;
+                flex-direction: row;
+            }
+            .box-image-clicked {
+                border-image: none;
+                border: none;
+                resize: none;
+                align-self: center;
+                font-size: 24px;
+                line-height: 24px;
+                text-align: center;
+            }
+            .box-item {
+                vertical-align: middle;
+                margin-left: 2px;
+                margin-right: 2px;
             }
         }
     }

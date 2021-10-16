@@ -157,7 +157,10 @@
             "new-item": "New Item",
             "new-aspect": "New Aspect",
             "delete": "Delete",
-            "add-box": "Add Box"
+            "add-track": "Add Track",
+            "mark": "Mark",
+            "clear": "Clear",
+            "burn": "Burn"
         }
     }
 }

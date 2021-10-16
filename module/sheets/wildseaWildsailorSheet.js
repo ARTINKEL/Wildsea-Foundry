@@ -28,7 +28,7 @@ export default class wildseaActorSheet extends ActorSheet {
             config: CONFIG.wildsea
         }
         
-        sheetData.aspects = baseData.items.filter(function(item) {return item.type == "aspect"})
+        sheetData.aspects = baseData.items.filter(function(item) {return item.type == "aspect"});
 
         return sheetData;
     }
@@ -37,23 +37,20 @@ export default class wildseaActorSheet extends ActorSheet {
         html.find(".item-create").click(this._onItemCreate.bind(this));
         html.find(".item-delete").click(this._onItemDelete.bind(this));
         html.find(".inline-edit").change(this._onAspectEdit.bind(this));
-        html.find(".box-create").change(this._onBoxCreate.bind(this));
+        html.find('.box-image-clicked').click(this._onBoxImageClicked.bind(this));
 
         new ContextMenu(html, ".aspect-item", this.itemContextMenu);
-        new ContextMenu(html, ".box-item", this.itemContextMenu);
-        
+
         super.activateListeners(html);
     }
 
     _onItemCreate(event) {
         event.preventDefault();
         let element = event.currentTarget;
-
         let itemData = {
             name: game.i18n.localize("wildsea.sheet-buttons.new-item"),
             type: element.dataset.type,
-        }
-
+        };
         return this.actor.createEmbeddedDocuments("Item", [itemData]);
     }
 
@@ -63,7 +60,6 @@ export default class wildseaActorSheet extends ActorSheet {
         let itemId = element.closest(".item").dataset.itemId;
         let item = this.actor.items.get(itemId);
         let field = element.dataset.field;
-
         return item.update({ [field]: element.value });
     }
 
@@ -73,14 +69,16 @@ export default class wildseaActorSheet extends ActorSheet {
         let itemId = element.closest(".item").dataset.itemId;
         return this.actor.deleteEmbeddedDocuments("Item", [itemId]);
     }
-
-    _onBoxCreate(event) {
-        event.preventDefault();
+    
+    _onBoxImageClicked(event) {
         let element = event.currentTarget;
-        let itemId = element.closest(".item").dataset.itemId;
-        let item = this.actor.items.get(itemId);
-        let field = element.dataset.field;
-
-        return item.update({ [field]: element.value });
+        if (element.firstChild.className == "fas fa-circle") {
+            element.firstChild.className = "fas fa-adjust";
+        } else if (element.firstChild.className == "fas fa-adjust") {
+            element.firstChild.className = "fas fa-ban";
+        } else if (element.firstChild.className == "fas fa-ban") {
+            element.firstChild.className = "fas fa-circle";
+        }
+        return element;
     }
 }
