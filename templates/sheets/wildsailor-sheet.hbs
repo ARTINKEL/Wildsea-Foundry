@@ -159,13 +159,13 @@
                 {{#each aspects as |aspect id|}}
                 <div class="aspect-item item" data-item-id="{{aspect._id}}">
                     <input class="aspect-name inline-edit" data-field="name" type="text" value="{{aspect.name}}" placeholder="{{localize "wildsea.sheet-buttons.new-aspect"}}"/>
-                    <input class="aspect-length inline-edit" data-field="aspect.length" type="text" value="{{aspect.length}}"/>
+                    <input class="track-length inline-edit" data-field="data.trackLength.value" type="text" value="{{aspect.data.trackLength.value}}"/>
                     <div class="aspect-track">
-                        {{#each data.value as |box bid|}}
+                        {{#times data.trackLength.value}}
                         <div class="box-item item">
                             <div name="box-image-{{@index}}" class="box-image-clicked"><i id="box-image-{{@index}}" class="fas fa-circle"></i></div>
                         </div>
-                        {{/each}}
+                        {{/times}}
                     </div>
                 </div>
                 {{/each}}

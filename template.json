@@ -277,7 +277,7 @@
     },
     "Item": {
         "types": [
-            "aspect" 
+            "aspect", "bloodline", "origin", "post","box"
         ],
         "templates": {
             "itemDescription": {
@@ -289,7 +289,19 @@
                 "itemDescription"
             ],
             "name": "",
-            "length": 0
+            "trackLength": {
+                "value": 0,
+                "max": 7
+            }, 
+            "boxes": []
+        },
+        "box": {
+            "current-state": "wildsea.trackLevels.clear"
+        },
+        "bloodline": {
+            "templates": [
+                "itemDescription"
+            ]
         }
     }
 }
